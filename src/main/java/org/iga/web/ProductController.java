@@ -24,7 +24,7 @@ public class ProductController {
         return productRepository.save(p);
     }
     @GetMapping
-    public List<Product> allProduct() {
+    public List<Product> allProducts() {
         return productRepository.findAll();
     }
     @GetMapping("{id}")
